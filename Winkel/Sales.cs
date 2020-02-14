@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Winkel
 {
@@ -40,6 +41,28 @@ namespace Winkel
 
 
             Console.WriteLine("-----------");
+        }
+
+        public void OnVerkoop(object source, WinkelEventArgs e)
+        {
+            bool isFound = false;
+            for(int i = 0; i<Transactions.Count; i++)
+            {
+                if (e.Bestelling.Adres == Transactions.ElementAt(i).Key)
+                {
+                    Transactions.ElementAt(i).Value.Add(e.Bestelling);
+                    isFound = true;
+                    i = Transactions.Count + 1;
+                }
+            }
+            if(isFound == false)
+            {
+                List<Bestelling> bestellingen = new List<Bestelling>() { e.Bestelling };
+                Transactions.Add(e.Bestelling.Adres, bestellingen);           
+            }
+
+            
+            Console.WriteLine("Raport gemaakt");
         }
     }
 }

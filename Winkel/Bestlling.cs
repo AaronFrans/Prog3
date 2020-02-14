@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Winkel
 {
-    class Bestelling
+    public class Bestelling
     {
         public enum ProductType
         {
