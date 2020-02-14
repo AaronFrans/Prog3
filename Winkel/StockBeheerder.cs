@@ -16,6 +16,16 @@ namespace Winkel
             Stock.Add(Bestelling.ProductType.Kriek, 100);
             Stock.Add(Bestelling.ProductType.Pils, 100);
         }
+
+        public void PrintStock()
+        {
+            Console.WriteLine("-----------");
+            foreach (KeyValuePair<Bestelling.ProductType, int> Item in Stock)
+            {
+                Console.WriteLine($"[stock:{Item.Key.ToString()}, {Item.Value}]");
+            }
+            Console.WriteLine("-----------");
+        }
         public Dictionary<Bestelling.ProductType, int> Stock { get; private set; } = new Dictionary<Bestelling.ProductType, int>();
 
         public void OnVerkoop(object source, WinkelEventArgs e)

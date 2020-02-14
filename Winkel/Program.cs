@@ -12,10 +12,13 @@ namespace Winkel
             Sales sales = new Sales(); // subscriber 2;
             winkel.Verkoop += stock.OnVerkoop;
             winkel.Verkoop += sales.OnVerkoop;
+            stock.PrintStock();
             winkel.VerkoopProduct(new Bestelling(Bestelling.ProductType.Dubbel, 12.05, 20, "hfjsngkjN"));
             winkel.VerkoopProduct(new Bestelling(Bestelling.ProductType.Dubbel, 12.05, 20, "sgbgsj"));
             winkel.VerkoopProduct(new Bestelling(Bestelling.ProductType.Dubbel, 12.05, 20, "hfjsngkjN"));
             winkel.VerkoopProduct(new Bestelling(Bestelling.ProductType.Dubbel, 12.05, 20, "sgbgsj"));
+
+
 
             sales.Rapport();
 
