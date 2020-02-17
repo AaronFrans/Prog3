@@ -16,5 +16,19 @@ namespace Collecties
         public float Width { get; private set; }
         public string Name { get; private set; }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Ship ship &&
+                   Name == ship.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Name);
+        }
+        public override string ToString()
+        {
+            return $"Naam: {Name}\nBreedte: {Width}, Lengte: {Lenght}\n";
+        }
     }
 }

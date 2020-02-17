@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefeningen", "Winkel\Oefeningen.csproj", "{BDAAEF80-F347-4323-833A-4CA20753B5B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Winkel", "Winkel\Winkel.csproj", "{BDAAEF80-F347-4323-833A-4CA20753B5B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collecties", "Collecties\Collecties.csproj", "{4287E135-BD3B-4FB6-BAA2-05E163369A59}"
 EndProject

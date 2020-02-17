@@ -6,11 +6,16 @@ namespace Collecties
 {
     class VrachtShip: Ship
     {
-        public VrachtShip(float lenght, float width, string name, int cargoWaarde) : base(lenght, width, name)
+        public VrachtShip(float lenght, float width, string name) : base(lenght, width, name)
         {
-            CargoWaarde = cargoWaarde;
+            CargoWaarde = "Onbepaald";
         }
 
-        public int CargoWaarde { get; private set; }
+        public string CargoWaarde { get; protected set; }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
