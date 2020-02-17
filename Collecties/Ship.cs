@@ -12,6 +12,10 @@ namespace Collecties
             Width = width;
             Name = name;
         }
+
+        public Vloot vloot { get; set; }
+
+
         public float Lenght { get;private  set; }
         public float Width { get; private set; }
         public string Name { get; private set; }

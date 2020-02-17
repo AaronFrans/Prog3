@@ -17,6 +17,18 @@ namespace Collecties
             Console.WriteLine(containerShipTest.ToString());
             Console.WriteLine(roRoShipTest.ToString());
             Console.WriteLine(cruiseShipTest.ToString());
+
+            Vloot vloot = new Vloot("Vloot test");
+            vloot.VoegSchipToe(shipTest);
+            vloot.GeefSchip();
+            vloot.VoegSchipToe(cruiseShipTest);
+            vloot.GeefSchip();
+            vloot.VoegSchipToe(roRoShipTest);
+            vloot.VerwijderSchip(roRoShipTest);
+            vloot.VerwijderSchip(shipTest);
+            vloot.GeefSchip();
+            Console.WriteLine(vloot.ZoektSchip(cruiseShipTest.Name).ToString());
+
         }
     }
 }
