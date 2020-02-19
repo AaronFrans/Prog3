@@ -50,6 +50,7 @@ namespace Collecties
         }
         public void VoegHavenToe(Ship ship)
         {
+            if(ship.vloot != null)
             VoegVloodToe(ship.vloot);
         }
         public void VeranderSchipVanVloot(string shipNaam, string vlootNaam)
@@ -70,8 +71,9 @@ namespace Collecties
                         shipToMove = ship;
                 }
             }
-            vlootToMoveTo.VoegSchipToe(shipToMove);
             shipToMove.vloot.VerwijderSchip(shipToMove);
+            vlootToMoveTo.VoegSchipToe(shipToMove);
+
         }
 
     }

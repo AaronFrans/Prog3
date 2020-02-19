@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Winkel", "Winkel\Winkel.csproj", "{BDAAEF80-F347-4323-833A-4CA20753B5B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collecties", "Collecties\Collecties.csproj", "{4287E135-BD3B-4FB6-BAA2-05E163369A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collecties", "Collecties\Collecties.csproj", "{4287E135-BD3B-4FB6-BAA2-05E163369A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIO", "FileIO\FileIO.csproj", "{394B97D8-1F40-4CB3-A76F-D0BAD339A33B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4287E135-BD3B-4FB6-BAA2-05E163369A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4287E135-BD3B-4FB6-BAA2-05E163369A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4287E135-BD3B-4FB6-BAA2-05E163369A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{394B97D8-1F40-4CB3-A76F-D0BAD339A33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{394B97D8-1F40-4CB3-A76F-D0BAD339A33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{394B97D8-1F40-4CB3-A76F-D0BAD339A33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394B97D8-1F40-4CB3-A76F-D0BAD339A33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
