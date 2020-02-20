@@ -23,6 +23,8 @@ namespace FileIO
                 bw.Write(s);
             }
         }
+        //blbla
+
         public static void Reader()
         {
             FileInfo f = new FileInfo("BinFile.dat");
